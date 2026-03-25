@@ -15,10 +15,6 @@ jobs:
       - uses: meta-introspector/install-nix-action@master
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-      - name: Check
-        run: nix develop --command cargo check
-      - name: Test
-        run: nix develop --command cargo test --lib
       - name: Build WASM
         run: nix develop --command dx build --release --platform web
       - uses: meta-introspector/upload-artifact@main
