@@ -14,7 +14,7 @@
 // rand = "0.8"
 // */
 // use dioxus::prelude::*;
-// use dioxus_motion::*;
+// use crate::stubs::motion::*;
 // use gloo_timers::future::TimeoutFuture;
 // use rand::Rng;
 // use std::time::Duration;

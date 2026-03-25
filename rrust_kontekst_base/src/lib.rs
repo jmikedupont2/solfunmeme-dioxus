@@ -6,7 +6,7 @@ use std::future::Future;
 use std::pin::Pin;
 use serde_json::Value;
 use serde::Serialize;
-use dioxus_logger::tracing::info;
+use log::info;
 // Type alias for MCP handlers
 type McpHandler = fn(Value) -> Pin<Box<dyn Future<Output = Result<Value, McpError>> + Send>>;
 

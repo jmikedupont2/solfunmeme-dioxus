@@ -1,5 +1,5 @@
 use dioxus::prelude::*;
-use dioxus_motion::prelude::*;
+use crate::stubs::motion::prelude::*;
 use std::time::Duration;
 use easer::functions::Easing;
 

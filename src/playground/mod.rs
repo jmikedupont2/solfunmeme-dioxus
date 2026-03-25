@@ -22,13 +22,17 @@ pub mod embedding;
 pub mod monster_meta_meme;
 pub mod performance_charts;
 pub mod rust_parser;
+#[cfg(not(target_arch = "wasm32"))]
 pub mod solfunmeme;
+#[cfg(not(target_arch = "wasm32"))]
 pub mod solfunnice;
 pub mod test_app;
 pub mod test_components;
+#[cfg(not(target_arch = "wasm32"))]
 pub mod test_emojis;
 //pub use test_app::*;
 pub mod markdown_processor;
+#[cfg(not(target_arch = "wasm32"))]
 pub mod orbits;
 pub mod wikidata;
 //pub mod newcode; delete

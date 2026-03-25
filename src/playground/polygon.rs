@@ -310,7 +310,7 @@ Core Animation Structure
 First, you'll need to create motion values for each polygon's properties using use_motion: lib.rs:108-162
 
 use dioxus::prelude::*;  
-use dioxus_motion::prelude::*;  
+use crate::stubs::motion::prelude::*;  
   
 #[component]  
 pub fn PrimePolygons() -> Element {  
@@ -536,7 +536,7 @@ src/lib.rs
 /// # Example
 ///
 /// ```no_run
-/// use dioxus_motion::prelude::*;
+/// use crate::stubs::motion::prelude::*;
 /// use dioxus::prelude::*;
 ///
 /// fn app() -> Element {

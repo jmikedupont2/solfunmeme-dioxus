@@ -6,7 +6,7 @@ use syn::ItemFn;
 use syn::parse::Parser;
 // Re-export the McpConfig from the mcp module
 use rrust_kontekst_base::McpConfig;
-//use dioxus_logger::tracing::info;
+//use log::info;
 use syn::{self, parse_macro_input, meta::ParseNestedMeta, Error};
 
 /// Parse a string literal value from meta
@@ -159,7 +159,7 @@ fn generate_registration(
 //	#[ctor::ctor]  
         pub fn #register_fn_name() {
             use rrust_kontekst_base::{McpToolInfo, register_mcp_tool};
-	    use dioxus_logger::tracing::info;
+	    use log::info;
 //	    use std::sync::Once;  
 //            static INIT: Once = Once::new();  
               

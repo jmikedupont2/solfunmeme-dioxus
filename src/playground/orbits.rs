@@ -1,5 +1,5 @@
 use dioxus::prelude::*;
-use dioxus_motion::prelude::*;
+use crate::stubs::motion::prelude::*;
 use gloo_timers::future::TimeoutFuture;
 use nalgebra::{vector, SVector};
 type Vector8<T> = SVector<T, 8>;
@@ -285,14 +285,14 @@ pub fn ThemeOrbitalNetwork2() -> Element {
 }
 
 // use dioxus::prelude::*;
-// use dioxus_motion::prelude::*;
+// use crate::stubs::motion::prelude::*;
 // use gloo_timers::future::TimeoutFuture;
 // use rand::Rng;
 // use std::time::Duration;
 // use wasm_bindgen::JsCast;
 // use web_sys::{console, window};
 // use easer::functions::Easing;
-// use dioxus_motion::animations::utils::LoopMode;
+// use crate::stubs::motion::animations::utils::LoopMode;
 // use nalgebra::{Vector4, Vector8};
 // use emojis;
 

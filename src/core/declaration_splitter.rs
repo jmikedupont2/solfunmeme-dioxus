@@ -165,7 +165,7 @@ impl DeclarationSplitter {
         lines: &[&str],
         file_path: Option<String>,
     ) -> Declaration {
-        let name = format!("impl_{}", item_impl.self_ty.span().start().line);
+        let name = format!("impl_{}", 0); // span.start() not available on WASM
         let (start, end) = self.get_span_lines(&item_impl.span());
         let content = self.extract_content(lines, start, end);
 
@@ -179,8 +179,9 @@ impl DeclarationSplitter {
         }
     }
 
-    fn get_span_lines(&self, span: &syn::__private::Span) -> (usize, usize) {
-        (span.start().line, span.end().line)
+    fn get_span_lines(&self, _span: &syn::__private::Span) -> (usize, usize) {
+        // span.start()/end() not available on wasm32
+        (0, 0)
     }
 
     fn extract_content(&self, lines: &[&str], start: usize, end: usize) -> String {

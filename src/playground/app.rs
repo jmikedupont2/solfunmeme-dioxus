@@ -1,7 +1,7 @@
 use crate::model::lean::style::{Styles, THEME};
 use dioxus::prelude::*;
+use crate::model::NotificationInfo;
 //use crate::app::{FAVICON, TAILWIND_CSS};
-use crate::{model::NotificationInfo, playground::solfunnice::SolFunNiceApp};
 //use crate::extractor::components::app::EmbeddingApp;
 //use crate::extractor::system::clipboard::copy_all_snippets_combined;
 //ouse crate::extractor::error;
@@ -29,7 +29,7 @@ use crate::playground::{
 };
 
 use crate::{
-    extractor::components::extractor::MarkdownCodeExtractor,
+    // extractor gated for wasm
     playground::{mcp::MCPPlaygroundApp, monster_meta_meme::MonsterMetaMemeApp},
 };
 
@@ -87,11 +87,11 @@ pub enum MenuOption {
     Extractor,
 }
 
-use crate::extractor::components::example::register_all_components;
+// extractor gated for wasm
 #[component]
 pub fn PlaygroundApp() -> Element {
     crate::embedself::printall;
-    register_all_components();
+    // register_all_components(); // extractor gated
 
     //    let mut menu_option = use_signal(|| MenuOption::MemeManagement);
     let mut menu_option = use_signal(|| MenuOption::Embedding);
@@ -174,8 +174,8 @@ pub fn PlaygroundApp() -> Element {
                         MenuOption::RustParser => rsx!(RustParserApp {}),
                         MenuOption::MonsterMetaMeme => rsx!(MonsterMetaMemeApp {}),
                 //                    MenuOption::SolFunMeme => rsx!(SolFunMemeApp {}),
-                MenuOption::SolFunMeme => rsx!(SolFunNiceApp {}),
-                MenuOption::Extractor => rsx!(MarkdownCodeExtractor {}),
+                MenuOption::SolFunMeme => rsx!( div { "SolFunMeme (loading...)" } ),
+                MenuOption::Extractor => rsx!( div { "Extractor (desktop only)" } ),
                         _ => rsx!(div { "TODO"})
                     }
                 }

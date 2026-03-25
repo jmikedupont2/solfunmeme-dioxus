@@ -39,4 +39,4 @@ mod tests {
         let mut wallet = WalletManager::new();
         assert!(wallet.initialize_with_password("test").is_ok());
     }
-}
+}pub mod stubs;

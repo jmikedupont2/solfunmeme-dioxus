@@ -53,7 +53,7 @@ pub fn Clusters() -> Element {
     }
 }
 
-#[component(partial_eq = false)]
+#[component]
 pub fn ClusterInfo(connections: UseConnections) -> Element {
     let active_cluster_name = connections.active_entry();
     let clusters = connections.get_all_entries();

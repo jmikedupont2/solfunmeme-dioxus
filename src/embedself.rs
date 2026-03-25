@@ -1,3 +1,4 @@
+use log::info;
 use rust_embed::Embed;
 
 #[derive(Embed)]
@@ -76,7 +77,7 @@ pub struct OurSourceViewWikwidata;
 #[folder = "src/views/workflow_memes"]
 pub struct OurSourceViewWorkflow;
 
-use dioxus_logger::tracing::info;
+
 
 pub fn printall() {
     info!("PRINT ALL");

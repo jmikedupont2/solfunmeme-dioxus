@@ -1,13 +1,13 @@
 use dioxus::prelude::*;
-use dioxus_motion::prelude::*;
+use crate::stubs::motion::prelude::*;
 use gloo_timers::future::TimeoutFuture;
 use rand::Rng;
 use std::time::Duration;
 use wasm_bindgen::JsCast;
 use web_sys::{console, window};
-//use dioxus_motion::AnimationStep;
+//use crate::stubs::motion::AnimationStep;
 use crate::playground::orbits::*;
-use dioxus_motion::animations::utils::LoopMode;
+use crate::stubs::motion::animations::utils::LoopMode;
 use easer::functions::Easing;
 
 // Welcome to the SOLFUNTHEME Zero Ontology System (ZOS)!
