@@ -1,4 +1,4 @@
-name: Build & Test
+name: Build Web (WASM)
 
 on:
   push:
@@ -7,26 +7,21 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  web:
+    name: Web (WASM)
     runs-on: ubuntu-latest
     steps:
       - uses: meta-introspector/checkout@main
-
       - uses: meta-introspector/install-nix-action@master
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-
       - name: Check
         run: nix develop --command cargo check
-
       - name: Test
         run: nix develop --command cargo test --lib
-
       - name: Build WASM
         run: nix develop --command dx build --release --platform web
-
-      - name: Upload dist
-        uses: meta-introspector/upload-artifact@main
+      - uses: meta-introspector/upload-artifact@main
         with:
-          name: wasm-dist
+          name: web-wasm
           path: target/dx/solfunmeme-dioxus/release/web/public
