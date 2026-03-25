@@ -123,3 +123,46 @@ help:
 	@echo "  ci             - Run full CI pipeline"
 	@echo "  dev-setup      - Set up development environment"
 	@echo "  help           - Show this help message"
+
+# ── Nix build ─────────────────────────────────────────────────────
+
+.PHONY: nix-check nix-build nix-serve nix-test-headless deploy-local
+
+nix-check:
+	nix develop --command cargo check
+
+nix-build:
+	nix develop --command cargo build --release --target wasm32-unknown-unknown
+
+nix-serve:
+	nix develop --command dx serve
+
+deploy-local:
+	nix develop --command dx build --release
+	@echo "✓ Built to dist/"
+	@echo "  Serve: python3 -m http.server 8888 -d dist"
+
+# ── Headless browser tests ────────────────────────────────────────
+
+test-headless: deploy-local
+	@echo "🧪 Running headless browser tests..."
+	nix develop --command bash -c '\
+		python3 -m http.server 8888 -d dist & \
+		SERVER_PID=$$!; \
+		sleep 2; \
+		echo "Testing /dao route..."; \
+		$$CHROME_BIN --headless --no-sandbox --disable-gpu \
+			--dump-dom http://localhost:8888/dao 2>/dev/null | head -20; \
+		echo "Testing /paste route..."; \
+		$$CHROME_BIN --headless --no-sandbox --disable-gpu \
+			--dump-dom http://localhost:8888/paste 2>/dev/null | head -20; \
+		echo "Testing /p2p route..."; \
+		$$CHROME_BIN --headless --no-sandbox --disable-gpu \
+			--dump-dom http://localhost:8888/p2p 2>/dev/null | head -20; \
+		kill $$SERVER_PID 2>/dev/null; \
+		echo "✅ Headless tests complete"'
+
+# ── GitHub Actions ────────────────────────────────────────────────
+
+ci: nix-check test nix-build
+	@echo "✅ CI complete"

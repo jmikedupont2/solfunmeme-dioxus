@@ -16,7 +16,7 @@ pub struct PrimeOntology {
 }
 
 /// Semantic concepts mapped to prime numbers
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, Hash)]
 pub enum SemanticConcept {
     /// 0 - The void, empty set, beginning
     Void,

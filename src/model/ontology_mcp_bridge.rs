@@ -1,14 +1,14 @@
 use serde::{Deserialize, Serialize};
 use std::collections::{HashMap, HashSet};
 use rrust_kontekst_base::{McpToolInfo, McpError};
-use crate::model::{PrimeOntology, MetaMemeOntology, MetaMemes, SemanticConcept};
+use crate::model::{PrimeOntology, metameme::{MetaMemeOntology, MetaMemes}, SemanticConcept};
 use std::future::Future;
 use std::pin::Pin;
 use serde_json::Value;
 
 /// Bridge between ontology systems and MCP protocol
 /// Provides semantic organization and categorization of tools
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize)]
 pub struct OntologyMcpBridge {
     pub prime_ontology: PrimeOntology,
     pub metameme_ontology: MetaMemeOntology,
@@ -29,8 +29,9 @@ pub struct ToolCategory {
 }
 
 /// Enhanced tool information with semantic context
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize)]
 pub struct SemanticToolInfo {
+    #[serde(skip)]
     pub base_info: McpToolInfo,
     pub semantic_category: SemanticConcept,
     pub prime_encoding: Vec<u64>,

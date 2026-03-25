@@ -642,9 +642,6 @@ impl MetaMemeOntology {
             }
         }
         
-        Some(Meme {
-            typ: target_language,
-            value: translated_value,
         let encoded_concept = self.prime_ontology.encode_concept(&translated_value);
         Some(Meme {
             typ: target_language,
@@ -653,10 +650,7 @@ impl MetaMemeOntology {
                 .map(|&x| x.round() as u64)
                 .collect(),
             semantic_vector: encoded_concept,
-            ast_structure: None, // Would need actual AST parsing
-            metadata: meme.metadata.clone(),
-        })
-            ast_structure: None, // Would need actual AST parsing
+            ast_structure: None,
             metadata: meme.metadata.clone(),
         })
     }
@@ -668,25 +662,27 @@ impl Default for MetaMemeOntology {
     }
 }
 
-// Legacy support for the old Meme struct
-pub const META_MEME: Meme = Meme {
-    typ: MetaMemes::MetaMeme,
-    value: "See MetaMemes enum above".to_string(),
-    prime_encoding: vec![1],
-    semantic_vector: vec![1.0],
-    ast_structure: None,
-    metadata: MemeMetadata {
-        creation_time: 0,
-        source_hash: "legacy".to_string(),
-        complexity_metrics: ComplexityMetrics {
-            cyclomatic_complexity: 0.0,
-            cognitive_complexity: 0.0,
-            semantic_density: 0.0,
-            prime_entropy: 0.0,
+// Legacy META_MEME — use MetaMemeOntology::new() instead
+pub fn meta_meme() -> Meme {
+    Meme {
+        typ: MetaMemes::MetaMeme,
+        value: "See MetaMemes enum above".to_string(),
+        prime_encoding: vec![1],
+        semantic_vector: vec![1.0],
+        ast_structure: None,
+        metadata: MemeMetadata {
+            creation_time: 0,
+            source_hash: "legacy".to_string(),
+            complexity_metrics: ComplexityMetrics {
+                cyclomatic_complexity: 0.0,
+                cognitive_complexity: 0.0,
+                semantic_density: 0.0,
+                prime_entropy: 0.0,
+            },
+            semantic_category: SemanticCategory::Meta,
         },
-        semantic_category: SemanticCategory::Meta,
-    },
-};
+    }
+}
 
 /// Legacy functions for backwards compatibility
 pub fn interpret(_m: &Meme) {
