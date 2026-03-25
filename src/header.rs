@@ -50,6 +50,9 @@ pub fn Header() -> Element {
                     {NavItem(Route::Clusters, "Clusters")}
                     {NavItem(Route::Extras, "Extras")}
                     {NavItem(Route::SourceBrowser, "Source")}
+                    {NavItem(Route::DaoGovernance, "DAO")}
+                    {NavItem(Route::Pastebin, "Paste")}
+                    {NavItem(Route::P2pSharing, "P2P")}
                     {NavClusterItem()}
                 }
                 NavWalletItem{show_modal, show_connecting, shortened_address:shortened_address.clone(), show_mobile_close_button}
@@ -81,6 +84,9 @@ pub fn Header() -> Element {
                                     {NavItem(Route::Clusters, "Clusters")}
                                     {NavItem(Route::Extras, "Extras")}
                                     {NavItem(Route::SourceBrowser, "Source")}
+                    {NavItem(Route::DaoGovernance, "DAO")}
+                    {NavItem(Route::Pastebin, "Paste")}
+                    {NavItem(Route::P2pSharing, "P2P")}
                                     {NavClusterItem()}
                                 }
                                 NavWalletItem{show_modal, show_connecting, shortened_address, show_mobile_close_button}

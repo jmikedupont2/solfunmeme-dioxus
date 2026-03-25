@@ -13,6 +13,7 @@ publish = false
 wallet-adapter = { git = "https://github.com/meta-introspector/SolanaWalletAdapter-zos", branch ="no-template"} # 
 syn-serde = { git = "https://github.com/meta-introspector/syn-serde-rust", branch="main", features = ["json"] }
 dioxus-charts = { git = "https://github.com/dioxus-community/dioxus-charts.git" ,  branch = "main" }
+erdfa-publish = { git = "https://github.com/meta-introspector/erdfa-publish.git", branch = "main", default-features = false, features = ["wasm"] }
 
 ## normal deps 
 inventory = "0.3"

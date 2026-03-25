@@ -89,3 +89,4 @@ pub mod wasm_bert;
 pub mod theme_node;
 
 pub mod clifford;
+pub mod erdfa;

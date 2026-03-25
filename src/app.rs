@@ -24,6 +24,7 @@ use crate::model::storage::{ACCOUNT_STATE, ACTIVE_CONNECTION, GLOBAL_MESSAGE, WA
 use crate::views::{
     accounts::Accounts, clusters::Clusters, dashboard::Dashboard, extras::Extras,
     source_browser::SourceBrowser, dao_governance::DaoGovernance,
+    pastebin_view::Pastebin, p2p_sharing::P2pSharing,
 };
 
 #[component]
@@ -92,6 +93,10 @@ pub enum Route {
         SourceBrowser(),
         #[route("/dao")]
         DaoGovernance(),
+        #[route("/paste")]
+        Pastebin(),
+        #[route("/p2p")]
+        P2pSharing(),
         // #[feature ("git2")]
         // #[route("/git-parser")]
         // GitParser2(),
