@@ -1,18 +1,9 @@
 {
   "version": 2,
-  "github": {
-    "enabled": false
-  },
-  "builds": [
-    {
-      "src": "./dist/**",
-      "use": "@now/static"
-    }
-  ],
+  "buildCommand": "nix develop --command dx build --release --platform web",
+  "outputDirectory": "target/dx/solfunmeme-dioxus/release/web/public",
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "dist/$1"
-    }
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
