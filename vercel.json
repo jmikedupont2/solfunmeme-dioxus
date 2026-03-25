@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "nix develop --command dx build --release --platform web",
-  "outputDirectory": "target/dx/solfunmeme-dioxus/release/web/public",
+  "outputDirectory": "docs",
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/index.html" }
