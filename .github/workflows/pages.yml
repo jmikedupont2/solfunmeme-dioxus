@@ -28,7 +28,7 @@ jobs:
           touch $DIST/.nojekyll
 
       - name: Deploy
-        uses: meta-introspector/github-pages-deploy-action@dev
+        uses: meta-introspector/github-pages-deploy-action@v4.4.3
         with:
           branch: gh-pages
           folder: target/dx/solfunmeme-dioxus/release/web/public
