@@ -2162,6 +2162,7 @@ checksum = "877a4ace8713b0bcf2a4e7eec82529c029f1d0619886d18145fea96c3ffe5c0f"
 [[package]]
 name = "erdfa-publish"
 version = "0.1.0"
+source = "git+https://github.com/meta-introspector/erdfa-publish.git?branch=main#ed622da08a2934c6bb32c86a4149d83d5ffb8306"
 dependencies = [
  "anyhow",
  "ciborium",
