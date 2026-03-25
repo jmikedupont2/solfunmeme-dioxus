@@ -1,6 +1,4 @@
 #!/bin/bash
-set -x
-set -euo pipefail  
-#dx serve --verbose --hot-reload true --trace  --platform web
-dx serve --verbose --hot-reload true --trace  --platform web --addr 0.0.0.0 --port 3000 --features web
-#--interactive true
+export PATH="/nix/var/nix/profiles/default/bin:$HOME/.nix-profile/bin:$PATH"
+cd /mnt/data1/meta-introspector/submodules/solfunmeme-dioxus
+exec nix develop --command dx serve --platform web --port 8108 --addr 0.0.0.0

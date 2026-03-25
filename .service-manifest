@@ -1,0 +1,17 @@
+[service]
+name = "solfunmeme-dioxus"
+port = 8108
+protocol = "tcp"
+description = "Solfunmeme Dioxus WASM frontend (dx serve)"
+
+[nginx]
+enabled = true
+path = "/dioxus"
+proxy_pass = "http://127.0.0.1:8108"
+
+[systemd]
+enabled = true
+user = true
+exec_start = "serve.sh"
+working_directory = "/mnt/data1/meta-introspector/submodules/solfunmeme-dioxus"
+restart = "always"
