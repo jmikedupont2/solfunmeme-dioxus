@@ -38,3 +38,4 @@ pub mod transaction_buttons;
 pub mod wikidata_memes;
 pub mod workflow_memes;
 
+pub mod dao_governance;

@@ -23,7 +23,7 @@ use crate::model::storage::{ACCOUNT_STATE, ACTIVE_CONNECTION, GLOBAL_MESSAGE, WA
 //use crate::model::adaptercluster::AdapterCluster;
 use crate::views::{
     accounts::Accounts, clusters::Clusters, dashboard::Dashboard, extras::Extras,
-    source_browser::SourceBrowser,
+    source_browser::SourceBrowser, dao_governance::DaoGovernance,
 };
 
 #[component]
@@ -90,6 +90,8 @@ pub enum Route {
         Extras(),
         #[route("/source")]
         SourceBrowser(),
+        #[route("/dao")]
+        DaoGovernance(),
         // #[feature ("git2")]
         // #[route("/git-parser")]
         // GitParser2(),
