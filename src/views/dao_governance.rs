@@ -65,3 +65,5 @@ pub fn DaoGovernance() -> Element {
         }
     }
 }
+
+crate::register_plugin!("dao_governance", "Vote on daily ZK rollup bills", crate::plugin::PluginCategory::Dao, "🏛️", || rsx!{ div{"plugin"} });

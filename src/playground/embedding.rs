@@ -16,3 +16,5 @@ pub fn EmbeddingViewer() -> Element {
         }
     }
 }
+
+crate::register_plugin!("embedding", "Token tier viewer", crate::plugin::PluginCategory::Data, "🔢", || rsx!{ div{"plugin"} });

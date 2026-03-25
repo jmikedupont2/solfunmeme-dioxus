@@ -27,3 +27,5 @@ pub fn WikidataViewer() -> Element {
         }
     }
 }
+
+crate::register_plugin!("wikidata", "Wikidata concept browser", crate::plugin::PluginCategory::Data, "🌐", || rsx!{ div{"plugin"} });

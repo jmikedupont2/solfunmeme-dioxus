@@ -393,3 +393,5 @@ fn init_three_js() {
     println!("Initialize Three.js scene (placeholder)");
     // Actual implementation would require wasm-bindgen bindings to Three.js
 }
+
+crate::register_plugin!("monster_meme", "Monster Group meme generator", crate::plugin::PluginCategory::Meta, "👹", || rsx!{ div{"plugin"} });

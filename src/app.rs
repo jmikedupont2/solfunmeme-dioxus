@@ -26,6 +26,7 @@ use crate::views::{
     source_browser::SourceBrowser, dao_governance::DaoGovernance,
     pastebin_view::Pastebin, p2p_sharing::P2pSharing,
 };
+use crate::plugin::PluginBrowser;
 
 #[component]
 pub(crate) fn MainApp() -> Element {
@@ -97,6 +98,8 @@ pub enum Route {
         Pastebin(),
         #[route("/p2p")]
         P2pSharing(),
+        #[route("/plugins")]
+        PluginBrowser(),
         // #[feature ("git2")]
         // #[route("/git-parser")]
         // GitParser2(),

@@ -21,3 +21,5 @@ pub fn DocCleaner() -> Element {
         }
     }
 }
+
+crate::register_plugin!("doc_cleaner", "Founding document browser", crate::plugin::PluginCategory::Data, "📄", || rsx!{ div{"plugin"} });

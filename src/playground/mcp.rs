@@ -832,3 +832,5 @@ pub fn MCPPlaygroundApp() -> Element {
         }
     }
 }
+
+crate::register_plugin!("mcp", "Model Context Protocol playground", crate::plugin::PluginCategory::Meta, "🤖", || rsx!{ div{"plugin"} });

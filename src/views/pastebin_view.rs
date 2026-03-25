@@ -94,3 +94,5 @@ pub fn Pastebin() -> Element {
         }
     }
 }
+
+crate::register_plugin!("pastebin", "Submit TX data, earn bounties", crate::plugin::PluginCategory::Data, "📋", || rsx!{ div{"plugin"} });

@@ -76,3 +76,5 @@ pub fn P2pSharing() -> Element {
         }
     }
 }
+
+crate::register_plugin!("p2p_sharing", "P2P data sharing + stego", crate::plugin::PluginCategory::Data, "🌐", || rsx!{ div{"plugin"} });

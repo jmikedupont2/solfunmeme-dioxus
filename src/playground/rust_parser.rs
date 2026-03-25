@@ -607,3 +607,5 @@ fn EmojiSettings(props: EmojiSettingsProps) -> Element {
         }
     }
 }
+
+crate::register_plugin!("rust_parser", "Rust source code parser", crate::plugin::PluginCategory::Analysis, "🔬", || rsx!{ div{"plugin"} });

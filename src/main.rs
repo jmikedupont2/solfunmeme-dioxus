@@ -23,6 +23,7 @@ pub mod playground;
 pub mod state;
 
 pub mod core;
+pub mod plugin;
 pub mod embedself;
 
 fn main() {
