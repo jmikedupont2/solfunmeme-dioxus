@@ -1,8 +1,9 @@
 {
   "version": 2,
-  "outputDirectory": "docs",
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "buildCommand": "",
+  "installCommand": "",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/docs/index.html" }
   ]
 }
