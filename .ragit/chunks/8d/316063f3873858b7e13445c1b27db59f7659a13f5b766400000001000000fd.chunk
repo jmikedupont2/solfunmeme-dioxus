@@ -1,0 +1,27 @@
+
+{
+  "data": "//! This module is for cleaning and processing the founding documents.\n//! It extracts code snippets, creates content-addressable versions,\n//! counts tokens, and tests the code.\n\n// Keep your existing save_summary and main functions unchanged\n//// old\n",
+  "images": [],
+  "char_len": 253,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "//! This module is for cleaning and processing the founding documents. //! It extracts code snippets, creates content-addressable versions, //! counts tokens, and tests the code.  // Keep your existing save_summary and main functions unchanged //// old ",
+  "source": {
+    "type": "File",
+    "path": "src/playground/doc_cleaner.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 187677524982019712567086185394822348213,
+    "low": 211961760268905750199347061595308032253
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450757,
+  "searchable": true
+}

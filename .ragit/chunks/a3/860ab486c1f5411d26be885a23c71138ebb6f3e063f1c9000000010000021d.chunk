@@ -1,0 +1,27 @@
+
+{
+  "data": "// Define the storage entry for persistent state\nuse serde::{Deserialize, Serialize};\n//use std::collections::HashMap;\n///use crate::model::connection::Connection;\nuse crate::model::adaptercluster::AdapterCluster;\n\n#[derive(Clone, Serialize, Deserialize)]\npub struct StorageEntry {\n    pub key: String,\n    //pub connections: HashMap<String, AdapterCluster>, // Keyed by name for uniqueness\n    //pub clusters: Vec<AdapterCluster>,            // Store clusters separately\n    pub entries: Vec<AdapterCluster>, // Store clusters separately\n}\n",
+  "images": [],
+  "char_len": 541,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "// Define the storage entry for persistent state use serde::{Deserialize, Serialize}; //use std::collections::HashMap; ///use crate::model::connection::Connection; use crate::model::adaptercluster::AdapterCluster;  #[derive(Clone, Serialize, Deserialize)] pub struct StorageEntry {     pub key: String,     //pub connections: HashMap<String, AdapterCluster>, // Keyed by name for uniqueness     //pub clusters: Vec<AdapterCluster>,            // Store clusters separately     pub entries: Vec<AdapterCluster>, // Store clusters separately } ",
+  "source": {
+    "type": "File",
+    "path": "src/model/storage_entry.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 217360148218855715450001749907324782353,
+    "low": 75660668246147796599810129731038216733
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450755,
+  "searchable": true
+}

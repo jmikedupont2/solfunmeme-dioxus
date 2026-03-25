@@ -1,0 +1,27 @@
+
+{
+  "data": "use super::forms::{DecryptionForm, EncryptionForm};\nuse crate::views::crypto_style::*;\nuse dioxus::prelude::*;\n\n#[component]\npub fn CryptoFrontendApp() -> Element {\n    rsx! {\n        div { class: APP_CONTAINER,\n            div { class: MAIN_WRAPPER,\n                AppHeader {}\n                div { class: GRID_LAYOUT,\n                    EncryptionForm {}\n                    DecryptionForm {}\n                }\n            }\n        }\n    }\n}\n\n#[component]\npub fn AppHeader() -> Element {\n    rsx! {\n        h1 { class: MAIN_TITLE,\n            \"Solana Wallet Encryption Demo\"\n        }\n    }\n}\n",
+  "images": [],
+  "char_len": 599,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use super::forms::{DecryptionForm, EncryptionForm}; use crate::views::crypto_style::*; use dioxus::prelude::*;  #[component] pub fn CryptoFrontendApp() -> Element {     rsx! {         div { class: APP_CONTAINER,             div { class: MAIN_WRAPPER,                 AppHeader {}                 div { class: GRID_LAYOUT,                     EncryptionForm {}                     DecryptionForm {}                 }             }         }     } }  #[component] pub fn AppHeader() -> Element {     rsx! {         h1 { class: MAIN_TITLE,             \"Solana Wallet Encryption Demo\"         }     } } ",
+  "source": {
+    "type": "File",
+    "path": "src/views/crypto_frontend/app.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 119665535240018026524873244054112212588,
+    "low": 165275364330920274143428850489759892055
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450762,
+  "searchable": true
+}

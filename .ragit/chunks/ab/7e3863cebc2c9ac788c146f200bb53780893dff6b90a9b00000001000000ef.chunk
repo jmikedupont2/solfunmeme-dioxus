@@ -1,0 +1,27 @@
+
+{
+  "data": "use serde::Deserialize;\n\n#[derive(Debug, PartialEq, Clone, Deserialize)]\n#[serde(rename_all = \"camelCase\")]\npub struct TokenAmount {\n    pub amount: String,\n    pub decimals: u8,\n    pub ui_amount: f64,\n    pub ui_amount_string: String,\n}\n",
+  "images": [],
+  "char_len": 239,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use serde::Deserialize;  #[derive(Debug, PartialEq, Clone, Deserialize)] #[serde(rename_all = \"camelCase\")] pub struct TokenAmount {     pub amount: String,     pub decimals: u8,     pub ui_amount: f64,     pub ui_amount_string: String, } ",
+  "source": {
+    "type": "File",
+    "path": "src/model/tokenamount.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 227953360405903296670045435030986079059,
+    "low": 159551897127507174621574448239859466479
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450755,
+  "searchable": true
+}

@@ -1,0 +1,27 @@
+
+{
+  "data": "// move to ../memes\n",
+  "images": [],
+  "char_len": 20,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "// move to ../memes ",
+  "source": {
+    "type": "File",
+    "path": "src/model/lean/meme.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 53321924707794067160921248082643702205,
+    "low": 199999854419028462911727710687343935508
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450756,
+  "searchable": true
+}

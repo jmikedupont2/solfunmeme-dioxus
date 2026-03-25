@@ -1,0 +1,27 @@
+
+{
+  "data": "#[derive(Debug, Clone, PartialEq)]\npub struct Forbd {\n    pub forbndr_typ: String,\n    pub forbd_b: String,\n}\n",
+  "images": [],
+  "char_len": 110,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "#[derive(Debug, Clone, PartialEq)] pub struct Forbd {     pub forbndr_typ: String,     pub forbd_b: String, } ",
+  "source": {
+    "type": "File",
+    "path": "src/model/lean/types/forbd.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 112888068736280939268805659274735260725,
+    "low": 140470713255103049070868303241031975022
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450756,
+  "searchable": true
+}

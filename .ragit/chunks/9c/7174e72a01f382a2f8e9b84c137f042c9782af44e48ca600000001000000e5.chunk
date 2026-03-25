@@ -1,0 +1,27 @@
+
+{
+  "data": "//pub mod save_summary;\npub mod annotate_code;\npub mod clean_html;\npub mod content_hash;\npub mod download;\npub mod drag;\npub mod extract;\npub mod extract_html;\npub mod files;\npub mod snippets;\n\npub mod walk_ast;\n//pub mod macro;\n",
+  "images": [],
+  "char_len": 229,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "//pub mod save_summary; pub mod annotate_code; pub mod clean_html; pub mod content_hash; pub mod download; pub mod drag; pub mod extract; pub mod extract_html; pub mod files; pub mod snippets;  pub mod walk_ast; //pub mod macro; ",
+  "source": {
+    "type": "File",
+    "path": "src/extractor/model/mod.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 207948667961681605367040576906509647620,
+    "low": 59272719239673252041280525726434459877
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450759,
+  "searchable": true
+}

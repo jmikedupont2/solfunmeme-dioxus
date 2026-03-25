@@ -1,0 +1,27 @@
+
+{
+  "data": "use crate::model::{SignaturesResponse, TokenAccountResponse};\n\n#[derive(Debug, Default, PartialEq)]\npub struct AccountState {\n    pub balance: String,\n    pub token_accounts: Vec<TokenAccountResponse>,\n    pub transactions: Vec<SignaturesResponse>,\n}\n\nimpl AccountState {\n    pub fn token_accounts_is_empty(&self) -> bool {\n        self.token_accounts.is_empty()\n    }\n\n    pub fn transactions_is_empty(&self) -> bool {\n        self.token_accounts.is_empty()\n    }\n\n    pub fn token_accounts(&self) -> &[TokenAccountResponse] {\n        self.token_accounts.as_slice()\n    }\n\n    pub fn transactions(&self) -> &[SignaturesResponse] {\n        self.transactions.as_slice()\n    }\n}\n",
+  "images": [],
+  "char_len": 677,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use crate::model::{SignaturesResponse, TokenAccountResponse};  #[derive(Debug, Default, PartialEq)] pub struct AccountState {     pub balance: String,     pub token_accounts: Vec<TokenAccountResponse>,     pub transactions: Vec<SignaturesResponse>, }  impl AccountState {     pub fn token_accounts_is_empty(&self) -> bool {         self.token_accounts.is_empty()     }      pub fn transactions_is_empty(&self) -> bool {         self.token_accounts.is_empty()     }      pub fn token_accounts(&self) -> &[TokenAccountResponse] {         self.token_accounts.as_slice()     }      pub fn transactions(&self) -> &[SignaturesResponse] {         self.transactions.as_slice()     } } ",
+  "source": {
+    "type": "File",
+    "path": "src/model/accountstate.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 14744233407641145341664649033179484551,
+    "low": 210965553388153027318613135845228544677
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450755,
+  "searchable": true
+}

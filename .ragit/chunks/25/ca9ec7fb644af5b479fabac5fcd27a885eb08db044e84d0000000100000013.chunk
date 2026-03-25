@@ -1,0 +1,27 @@
+
+{
+  "data": "pub mod use_memes;\n",
+  "images": [],
+  "char_len": 19,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "pub mod use_memes; ",
+  "source": {
+    "type": "File",
+    "path": "src/state/mod.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 50233500274389623815629992928902697594,
+    "low": 181266664261264655410979688576058392595
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450761,
+  "searchable": true
+}

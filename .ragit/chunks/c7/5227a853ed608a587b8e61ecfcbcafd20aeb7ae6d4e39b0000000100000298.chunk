@@ -1,0 +1,27 @@
+
+{
+  "data": "use serde::{Deserialize, Serialize};\n\n#[derive(Debug, Clone, PartialEq, Deserialize, Serialize)]\npub enum BinderInfo {\n    Default,\n    Implicit,\n    StrictImplicit,\n    InstImplicit,\n    AuxDecl,\n}\n\n#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]\npub struct BinderInfoData {\n    pub implicit: bool,\n    pub strict: bool,\n}\n\nimpl BinderInfoData {\n    #[allow(dead_code)]\n    pub fn default() -> Self {\n        BinderInfoData {\n            implicit: false,\n            strict: false,\n        }\n    }\n    #[allow(dead_code)]\n    pub fn implicit() -> Self {\n        BinderInfoData {\n            implicit: true,\n            strict: false,\n        }\n    }\n}\n",
+  "images": [],
+  "char_len": 664,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use serde::{Deserialize, Serialize};  #[derive(Debug, Clone, PartialEq, Deserialize, Serialize)] pub enum BinderInfo {     Default,     Implicit,     StrictImplicit,     InstImplicit,     AuxDecl, }  #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)] pub struct BinderInfoData {     pub implicit: bool,     pub strict: bool, }  impl BinderInfoData {     #[allow(dead_code)]     pub fn default() -> Self {         BinderInfoData {             implicit: false,             strict: false,         }     }     #[allow(dead_code)]     pub fn implicit() -> Self {         BinderInfoData {             implicit: true,             strict: false,         }     } } ",
+  "source": {
+    "type": "File",
+    "path": "src/model/lean/binder.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 264942943853878186518581547078101286063,
+    "low": 279194578186949285837988211669055046296
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450756,
+  "searchable": true
+}

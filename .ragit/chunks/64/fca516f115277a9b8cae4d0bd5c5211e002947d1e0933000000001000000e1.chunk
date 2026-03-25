@@ -1,0 +1,27 @@
+
+{
+  "data": "use dioxus::prelude::*;\n#[component]\npub fn ExtractorAppHeader() -> Element {\n    rsx! {\n        h1 { \"📄 Markdown Code Extractor\" }\n        p { \"Upload markdown files to extract and copy code snippets with ease\" }\n    }\n}\n",
+  "images": [],
+  "char_len": 222,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use dioxus::prelude::*; #[component] pub fn ExtractorAppHeader() -> Element {     rsx! {         h1 { \"📄 Markdown Code Extractor\" }         p { \"Upload markdown files to extract and copy code snippets with ease\" }     } } ",
+  "source": {
+    "type": "File",
+    "path": "src/extractor/components/appheader.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 134234606802058002935365972360049313057,
+    "low": 39877677142494625927941056466146820321
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450760,
+  "searchable": true
+}

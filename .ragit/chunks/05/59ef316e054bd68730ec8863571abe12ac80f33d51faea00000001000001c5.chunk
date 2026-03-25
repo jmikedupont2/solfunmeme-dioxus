@@ -1,0 +1,27 @@
+
+{
+  "data": "use dioxus::prelude::*;\n#[component]\npub fn FileInput(upload_files: EventHandler<FormEvent>) -> Element {\n    rsx! {\n        div { class: \"file-input\",\n            label { r#for: \"file-upload\", \"📁 Select Markdown Files:\" }\n            input {\n                id: \"file-upload\",\n                r#type: \"file\",\n                accept: \".md,.txt\",\n                multiple: true,\n                onchange: upload_files,\n            }\n        }\n    }\n}\n",
+  "images": [],
+  "char_len": 450,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use dioxus::prelude::*; #[component] pub fn FileInput(upload_files: EventHandler<FormEvent>) -> Element {     rsx! {         div { class: \"file-input\",             label { r#for: \"file-upload\", \"📁 Select Markdown Files:\" }             input {                 id: \"file-upload\",                 r#type: \"file\",                 accept: \".md,.txt\",                 multiple: true,                 onchange: upload_files,             }         }     } } ",
+  "source": {
+    "type": "File",
+    "path": "src/extractor/components/fileinput.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 7113105811459168815919138718776498878,
+    "low": 24821794403646927943073737752012915141
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450760,
+  "searchable": true
+}

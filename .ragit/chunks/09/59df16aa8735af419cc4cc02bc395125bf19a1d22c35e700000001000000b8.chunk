@@ -1,0 +1,27 @@
+
+{
+  "data": "use crate::model::ParseInfo;\nuse serde::Deserialize;\n\n#[derive(Debug, PartialEq, Clone, Deserialize)]\n#[serde(rename_all = \"camelCase\")]\npub struct Parsed {\n    pub info: ParseInfo,\n}\n",
+  "images": [],
+  "char_len": 184,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use crate::model::ParseInfo; use serde::Deserialize;  #[derive(Debug, PartialEq, Clone, Deserialize)] #[serde(rename_all = \"camelCase\")] pub struct Parsed {     pub info: ParseInfo, } ",
+  "source": {
+    "type": "File",
+    "path": "src/model/parsed.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 12429691155610942325001756712323791185,
+    "low": 50173684425041594807976118509400752312
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450756,
+  "searchable": true
+}

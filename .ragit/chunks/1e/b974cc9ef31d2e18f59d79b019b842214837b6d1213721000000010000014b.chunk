@@ -1,0 +1,27 @@
+
+{
+  "data": "pub mod code_analyzer;\npub mod declaration_splitter;\npub mod duplicate_detector;\npub mod meme_generator;\npub mod vectorization;\npub mod wallet_integration;\n\npub use code_analyzer::*;\npub use declaration_splitter::*;\npub use duplicate_detector::*;\npub use meme_generator::*;\npub use vectorization::*;\npub use wallet_integration::*;\n",
+  "images": [],
+  "char_len": 331,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "pub mod code_analyzer; pub mod declaration_splitter; pub mod duplicate_detector; pub mod meme_generator; pub mod vectorization; pub mod wallet_integration;  pub use code_analyzer::*; pub use declaration_splitter::*; pub use duplicate_detector::*; pub use meme_generator::*; pub use vectorization::*; pub use wallet_integration::*; ",
+  "source": {
+    "type": "File",
+    "path": "src/core/mod.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 40839783763628134127002023723926140994,
+    "low": 44239499251493031776670102242216378699
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450761,
+  "searchable": true
+}

@@ -1,0 +1,27 @@
+
+{
+  "data": "// use crate::playground::doc_cleaner;\n// FIXME get this working so we can pre-process the documents from a cargo command\nfn main() {\n    println!(\"hello world\");\n    //     if let Err(e) = (|| -> Result<(), &'static str> {\n    //         // TODO: Implement document processing logic.\n    //         // The call to `doc_cleaner::main()` was removed as it does not exist in the provided context.\n    //         // This is a placeholder to make the program compile.\n    //         Ok(())\n    //     })() {\n    //         eprintln!(\"Error: {}\", e);\n    //         // SAFETY: Exiting the process is a terminal action.\n    //         //unsafe { std::process::exit(1) };\n    //     }\n}\n",
+  "images": [],
+  "char_len": 680,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "// use crate::playground::doc_cleaner; // FIXME get this working so we can pre-process the documents from a cargo command fn main() {     println!(\"hello world\");     //     if let Err(e) = (|| -> Result<(), &'static str> {     //         // TODO: Implement document processing logic.     //         // The call to `doc_cleaner::main()` was removed as it does not exist in the provided context.     //         // This is a placeholder to make the program compile.     //         Ok(())     //     })() {     //         eprintln!(\"Error: {}\", e);     //         // SAFETY: Exiting the process is a terminal action.     //         //unsafe { std::process::exit(1) };     //     } } ",
+  "source": {
+    "type": "File",
+    "path": "src/bin/doc_processor.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 257633836250797400236328702133533108792,
+    "low": 36225482551596584992951151276098323112
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450761,
+  "searchable": true
+}

@@ -1,0 +1,27 @@
+
+{
+  "data": "use dioxus::prelude::*;\n\nuse crate::{\n    model::storage::ACTIVE_CONNECTION,\n    views::{\n        connect_first::ConnectWalletFirst,\n        extras_views::{SignInWithSolana, SignMessage, SignTx},\n    },\n};\n\n#[component]\npub fn Extras() -> Element {\n    if ACTIVE_CONNECTION.read().connected_account().is_ok() {\n        rsx! {\n            div { class:\"flex justify-center mt-10 mb-5 gap-8 w-full flex-wrap items-stretch\",\n                SignInWithSolana{}\n                SignMessage{}\n                SignTx{}\n            }\n        }\n    } else {\n        rsx! {ConnectWalletFirst {}}\n    }\n}\n",
+  "images": [],
+  "char_len": 593,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use dioxus::prelude::*;  use crate::{     model::storage::ACTIVE_CONNECTION,     views::{         connect_first::ConnectWalletFirst,         extras_views::{SignInWithSolana, SignMessage, SignTx},     }, };  #[component] pub fn Extras() -> Element {     if ACTIVE_CONNECTION.read().connected_account().is_ok() {         rsx! {             div { class:\"flex justify-center mt-10 mb-5 gap-8 w-full flex-wrap items-stretch\",                 SignInWithSolana{}                 SignMessage{}                 SignTx{}             }         }     } else {         rsx! {ConnectWalletFirst {}}     } } ",
+  "source": {
+    "type": "File",
+    "path": "src/views/extras.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 325029138991686858618234765234051483988,
+    "low": 273399795819961129881112811037236658769
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450763,
+  "searchable": true
+}

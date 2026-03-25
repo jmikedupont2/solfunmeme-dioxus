@@ -1,0 +1,27 @@
+
+{
+  "data": "use crate::model::TokenData;\nuse serde::Deserialize;\n\n#[derive(Debug, PartialEq, Clone, Deserialize)]\n#[serde(rename_all = \"camelCase\")]\npub struct Account {\n    pub data: TokenData,\n}\n",
+  "images": [],
+  "char_len": 185,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use crate::model::TokenData; use serde::Deserialize;  #[derive(Debug, PartialEq, Clone, Deserialize)] #[serde(rename_all = \"camelCase\")] pub struct Account {     pub data: TokenData, } ",
+  "source": {
+    "type": "File",
+    "path": "src/model/account.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 104113656775400408159987742384317124982,
+    "low": 260860189178932742036238233355465785529
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450755,
+  "searchable": true
+}

@@ -1,0 +1,27 @@
+
+{
+  "data": "\n",
+  "images": [],
+  "char_len": 1,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": " ",
+  "source": {
+    "type": "File",
+    "path": "src/playground/markdown_processor.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 176148796231302413361340819297190313786,
+    "low": 67355192696970146848400328149683929089
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450757,
+  "searchable": true
+}

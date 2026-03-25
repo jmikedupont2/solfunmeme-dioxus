@@ -1,0 +1,27 @@
+
+{
+  "data": "Ideas:\n1. gcc asts, metacoq, lean4 dumper and rust procedureal macros and rust syn parsers produce expressions\n2. we can import those asts as \"memes\" or meta-memes. They are syntactic forms.\n\n\n3. the interpretation of the expressions as a group of memes is supported (import etc)\n4. writing proofs and validating interpretations.\n5. creating llm content from the memes, expanding them. \n6. the memes can be solana pdas, github issues, codeberg issues,\ntweets, basically any rdf that we can construct.\n7. this structure should only have 8 layers and loop back on itself like bott periodicity. ",
+  "images": [],
+  "char_len": 592,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "Ideas: 1. gcc asts, metacoq, lean4 dumper and rust procedureal macros and rust syn parsers produce expressions 2. we can import those asts as \"memes\" or meta-memes. They are syntactic forms.   3. the interpretation of the expressions as a group of memes is supported (import etc) 4. writing proofs and validating interpretations. 5. creating llm content from the memes, expanding them.  6. the memes can be solana pdas, github issues, codeberg issues, tweets, basically any rdf that we can construct. 7. this structure should only have 8 layers and loop back on itself like bott periodicity. ",
+  "source": {
+    "type": "File",
+    "path": "src/model/lean/Readme.md",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 74361915050461660705191494430201806874,
+    "low": 18689026491185032482343080223190286928
+  },
+  "build_info": {
+    "file_reader_key": "markdown_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450756,
+  "searchable": true
+}

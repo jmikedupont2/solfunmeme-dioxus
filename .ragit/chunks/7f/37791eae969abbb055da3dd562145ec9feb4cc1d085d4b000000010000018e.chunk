@@ -1,0 +1,27 @@
+
+{
+  "data": "// Re-export shared types from erdfa-publish\npub use erdfa_publish::ingest::{\n    TOKEN_CA, AUTHOR, MAINNET_RPC,\n    fibonacci_tiers,\n    TxRecord, HolderInfo, IngestState,\n    rank_holders, verify_claim, ClaimMetadata,\n    PasteStatus,\n};\n\n// Re-export stego types\npub use erdfa_publish::{StegoPlugin, StegoChain};\npub use erdfa_publish::{DistributionPlan, DistributionTarget, Platform, AclTier};\n",
+  "images": [],
+  "char_len": 398,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "// Re-export shared types from erdfa-publish pub use erdfa_publish::ingest::{     TOKEN_CA, AUTHOR, MAINNET_RPC,     fibonacci_tiers,     TxRecord, HolderInfo, IngestState,     rank_holders, verify_claim, ClaimMetadata,     PasteStatus, };  // Re-export stego types pub use erdfa_publish::{StegoPlugin, StegoChain}; pub use erdfa_publish::{DistributionPlan, DistributionTarget, Platform, AclTier}; ",
+  "source": {
+    "type": "File",
+    "path": "src/model/erdfa.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 169099988394343109946946141303605433438,
+    "low": 268497337560094924136877781208101028238
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450755,
+  "searchable": true
+}

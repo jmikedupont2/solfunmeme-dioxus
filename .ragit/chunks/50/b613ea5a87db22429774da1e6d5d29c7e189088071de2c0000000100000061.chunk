@@ -1,0 +1,27 @@
+
+{
+  "data": "pub mod clipboard;\npub mod process_file; // FIXME not implements, read files.\npub mod test_code;\n",
+  "images": [],
+  "char_len": 97,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "pub mod clipboard; pub mod process_file; // FIXME not implements, read files. pub mod test_code; ",
+  "source": {
+    "type": "File",
+    "path": "src/extractor/system/mod.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 107283641624236996880106677531795348777,
+    "low": 265687417318061334369004306393907331169
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450759,
+  "searchable": true
+}

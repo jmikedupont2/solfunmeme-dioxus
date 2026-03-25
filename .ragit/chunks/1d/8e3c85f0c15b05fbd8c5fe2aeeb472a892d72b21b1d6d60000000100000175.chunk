@@ -1,0 +1,27 @@
+
+{
+  "data": "\n// Helper macro for easy component definition\n#[macro_export]\nmacro_rules! define_mcp_component {\n    (\n        $(#[$attr:meta])*\n        $vis:vis async fn $name:ident() -> Result<$ret:ty, $err:ty> $body:block\n        $(, $config:tt)*\n    ) => {\n        #[mcp_component($($config)*)]\n        $(#[$attr])*\n        $vis async fn $name() -> Result<$ret, $err> $body\n    };\n}\n",
+  "images": [],
+  "char_len": 373,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": " // Helper macro for easy component definition #[macro_export] macro_rules! define_mcp_component {     (         $(#[$attr:meta])*         $vis:vis async fn $name:ident() -> Result<$ret:ty, $err:ty> $body:block         $(, $config:tt)*     ) => {         #[mcp_component($($config)*)]         $(#[$attr])*         $vis async fn $name() -> Result<$ret, $err> $body     }; } ",
+  "source": {
+    "type": "File",
+    "path": "src/extractor/model/macros.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 39286145588106494220883645828151817330,
+    "low": 224072742768515724432319446286635893109
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450760,
+  "searchable": true
+}

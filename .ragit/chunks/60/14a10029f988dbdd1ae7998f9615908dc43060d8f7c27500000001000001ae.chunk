@@ -1,0 +1,27 @@
+
+{
+  "data": "//use serde::{Deserialize, Serialize};\n\n//use wallet_adapter::Cluster;\n\n//use crate::model::storage_entry::StorageEntry;\n//use crate::model::adaptercluster::AdapterCluster;\n// storage_entry\n//#[derive(Clone, Serialize, Deserialize, PartialEq, Default)]\n\n//duplicate of AdapterCluster\n// pub struct Connection {\n//     pub name: String,\n//     pub url: String,\n//     pub cluster_name: String, // Reference to cluster by name\n// }\n",
+  "images": [],
+  "char_len": 430,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "//use serde::{Deserialize, Serialize};  //use wallet_adapter::Cluster;  //use crate::model::storage_entry::StorageEntry; //use crate::model::adaptercluster::AdapterCluster; // storage_entry //#[derive(Clone, Serialize, Deserialize, PartialEq, Default)]  //duplicate of AdapterCluster // pub struct Connection { //     pub name: String, //     pub url: String, //     pub cluster_name: String, // Reference to cluster by name // } ",
+  "source": {
+    "type": "File",
+    "path": "src/model/connection.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 127712999013459362499644457395814798736,
+    "low": 188439818818658826040407612818525782446
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450757,
+  "searchable": true
+}

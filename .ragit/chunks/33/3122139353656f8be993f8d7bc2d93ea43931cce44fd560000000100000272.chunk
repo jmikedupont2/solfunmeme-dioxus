@@ -1,0 +1,27 @@
+
+{
+  "data": "#![allow(non_snake_case)]\nuse crate::playground::app::PlaygroundApp;\nuse dioxus::launch;\nmod model;\nmod views;\nuse model::*;\nmod header;\nmod utils;\nuse fetch_parser::*;\nmod svg_assets;\npub(crate) use svg_assets::*;\nmod fetch_util;\npub(crate) use fetch_util::*;\nmod app;\nuse crate::model::NotificationInfo;\npub(crate) use app::{Route, LOGO};\nmod password_manager;\n\n#[cfg(not(target_arch = \"wasm32\"))]\npub mod extractor;\npub mod fetch_parser;\npub mod playground;\npub mod state;\n\npub mod core;\npub mod embedself;\n\nfn main() {\n    // Use the memes App component from views\n    embedself::printall();\n\n    launch(PlaygroundApp);\n}\n",
+  "images": [],
+  "char_len": 626,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "#![allow(non_snake_case)] use crate::playground::app::PlaygroundApp; use dioxus::launch; mod model; mod views; use model::*; mod header; mod utils; use fetch_parser::*; mod svg_assets; pub(crate) use svg_assets::*; mod fetch_util; pub(crate) use fetch_util::*; mod app; use crate::model::NotificationInfo; pub(crate) use app::{Route, LOGO}; mod password_manager;  #[cfg(not(target_arch = \"wasm32\"))] pub mod extractor; pub mod fetch_parser; pub mod playground; pub mod state;  pub mod core; pub mod embedself;  fn main() {     // Use the memes App component from views     embedself::printall();      launch(PlaygroundApp); } ",
+  "source": {
+    "type": "File",
+    "path": "src/main.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 68045741483955644303159836156104551827,
+    "low": 311390218699629750229627203529568420466
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450761,
+  "searchable": true
+}

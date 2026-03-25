@@ -1,0 +1,27 @@
+
+{
+  "data": "use dioxus::prelude::*;\n\n//use crate::WalletSvg;\nuse crate::WalletSvg;\n#[component]\npub fn ConnectWalletFirst() -> Element {\n    rsx! {\n        div {class:\"flex w-full text-2xl justify-center items-center\",\n            span { class:\"flex w-[30px]\", {WalletSvg()}}\n            \"Connect a Wallet first!\"\n        }\n    }\n}\n",
+  "images": [],
+  "char_len": 320,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use dioxus::prelude::*;  //use crate::WalletSvg; use crate::WalletSvg; #[component] pub fn ConnectWalletFirst() -> Element {     rsx! {         div {class:\"flex w-full text-2xl justify-center items-center\",             span { class:\"flex w-[30px]\", {WalletSvg()}}             \"Connect a Wallet first!\"         }     } } ",
+  "source": {
+    "type": "File",
+    "path": "src/views/connect_first.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 135071035528979368227699373782858740151,
+    "low": 324414258830054529131460805429118894400
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450763,
+  "searchable": true
+}

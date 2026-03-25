@@ -1,0 +1,27 @@
+
+{
+  "data": "//use crate::level::Level;\n\nuse super::{forbd::Forbd, sig::Sig};\n//use crate::level::Level;\n\nuse crate::model::level::Level;\n\n#[derive(Debug, Clone, PartialEq)]\n#[allow(dead_code)]\npub struct CnstInf {\n    pub levels: Vec<Level>,\n    pub decl_name: String,\n    pub forbd: Forbd,\n    pub binder_name: String,\n    pub binder_info: String,\n}\n\n#[derive(Debug, Clone, PartialEq)]\n#[allow(dead_code)]\npub struct CnstInfB {\n    pub sig: Sig,\n    pub cnst_inf: CnstInf,\n}\n",
+  "images": [],
+  "char_len": 464,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "//use crate::level::Level;  use super::{forbd::Forbd, sig::Sig}; //use crate::level::Level;  use crate::model::level::Level;  #[derive(Debug, Clone, PartialEq)] #[allow(dead_code)] pub struct CnstInf {     pub levels: Vec<Level>,     pub decl_name: String,     pub forbd: Forbd,     pub binder_name: String,     pub binder_info: String, }  #[derive(Debug, Clone, PartialEq)] #[allow(dead_code)] pub struct CnstInfB {     pub sig: Sig,     pub cnst_inf: CnstInf, } ",
+  "source": {
+    "type": "File",
+    "path": "src/model/lean/types/cnst_inf.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 259333728741452851582583813775349773489,
+    "low": 79790863979059316240588709501650076112
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450756,
+  "searchable": true
+}

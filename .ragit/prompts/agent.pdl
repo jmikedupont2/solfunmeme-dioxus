@@ -1,0 +1,113 @@
+<|system|>
+
+You're a RAG agent. A user will ask you a question, and you have to answer the question. There's a knowledge-base that's related to the question. I'll allow you to browse files and directories in the knowledge-base.
+
+{% if summary %}
+Below is a summary of the knowledge-base. I hope you can find relevant information from the knowledge-base!
+
+{{summary}}
+{% endif %}
+
+The user question is:
+
+{{question}}
+
+<|user|>
+
+Below is the information you gathered from the knowledge-base so far.
+
+{# The initial context is code-generated. If it's a knowledge-base-summarizer, it's a file tree of the root dir. #}
+{{context}}
+
+<|assistant|>
+
+Okay
+
+<|user|>
+
+You have to answer the user question. Do you think you have enough information?
+
+{% if has_enough_information %}
+<|assistant|>
+
+Yes
+
+<|user|>
+
+Then answer it. Don't say anything other than the answer.
+
+{% else %}
+<|assistant|>
+
+No
+
+<|user|>
+
+In order to answer it, what more information do you need?
+
+{% if needed_information %}
+<|assistant|>
+
+{{needed_information}}
+
+{% for action in action_states %}
+<|user|>
+
+Below are the actions that you can do. Choose an action that would help get the information that you need.
+
+{{action_prompt}}
+
+Please choose which action to run (give me a number). Then I'll give you a further instruction.
+
+{% if action.index %}
+<|assistant|>
+
+{{action.index}}
+
+<|user|>
+
+{{action.instruction}}
+
+{% for t in action.argument_turns %}
+<|assistant|>
+
+{{t.assistant}}
+
+<|user|>
+
+{{t.user}}
+{% endfor %}
+
+{% if action.complete %}
+Do you want to do more actions? Say yes or no.
+
+{% if action.continue %}
+<|assistant|>
+
+{{action.continue}}
+{% endif %}  {# action.continue #}
+{% endif %}  {# action.copmlete #}
+{% endif %}  {# action.num #}
+{% endfor %}
+
+{% if is_actions_complete %}
+<|user|>
+
+What *new* information did you get from the actions? List the new information that might help you answer the user question.
+
+{% if new_information %}
+<|assistant|>
+
+{{new_information}}
+
+<|user|>
+
+Below is the information you gathered before you do the actions. Update it with the new information. If there's nothing to update, just repeat after the information.
+
+{{context}}
+
+{# When this point is reached, we update the context with its response and continue the loop. #}
+{% endif %}  {# new_information #}
+{% endif %}  {# is_actions_complete #}
+{% endif %}  {# needed_information #}
+{% endif %}  {# has_enough_information #}

@@ -1,0 +1,27 @@
+
+{
+  "data": "use crate::model::lean::style::Styles;\nuse dioxus::prelude::*;\n\n#[component]\npub fn MetaMemeOperations() -> Element {\n    rsx! {\n        div {\n            class: \"{Styles::section()}\",\n            h2 { class: \"{Styles::h2()}\", \"MetaMeme Operations\" }\n            p { class: \"{Styles::p()}\", \"This section demonstrates meta meme operations.\" }\n        }\n    }\n}\n",
+  "images": [],
+  "char_len": 361,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use crate::model::lean::style::Styles; use dioxus::prelude::*;  #[component] pub fn MetaMemeOperations() -> Element {     rsx! {         div {             class: \"{Styles::section()}\",             h2 { class: \"{Styles::h2()}\", \"MetaMeme Operations\" }             p { class: \"{Styles::p()}\", \"This section demonstrates meta meme operations.\" }         }     } } ",
+  "source": {
+    "type": "File",
+    "path": "src/views/meta_meme_operations.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 211427471065456440462458952332657141302,
+    "low": 115116674042868702834508430638177059177
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450762,
+  "searchable": true
+}

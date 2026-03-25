@@ -1,0 +1,27 @@
+
+{
+  "data": "#[derive(Debug, Clone, PartialEq)]\n#[allow(dead_code)]\npub struct Sig {\n    pub atype: String,\n    pub forbndr_typ_b: String,\n    pub binder_name: String,\n    pub binder_info: String,\n}\n",
+  "images": [],
+  "char_len": 186,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "#[derive(Debug, Clone, PartialEq)] #[allow(dead_code)] pub struct Sig {     pub atype: String,     pub forbndr_typ_b: String,     pub binder_name: String,     pub binder_info: String, } ",
+  "source": {
+    "type": "File",
+    "path": "src/model/lean/types/sig.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 158502045702037918234617268174450325950,
+    "low": 269449281978224859154264254317600964794
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450757,
+  "searchable": true
+}

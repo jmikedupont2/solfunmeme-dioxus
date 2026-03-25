@@ -1,0 +1,27 @@
+
+{
+  "data": "use std::hash::Hash;\n\n#[derive(Debug, Clone, PartialEq, Eq, Hash)]\n#[allow(dead_code)]\npub enum Name {\n    Anonymous,\n    Str(Box<Name>, String),\n    Num(Box<Name>, u64),\n}\n",
+  "images": [],
+  "char_len": 173,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use std::hash::Hash;  #[derive(Debug, Clone, PartialEq, Eq, Hash)] #[allow(dead_code)] pub enum Name {     Anonymous,     Str(Box<Name>, String),     Num(Box<Name>, u64), } ",
+  "source": {
+    "type": "File",
+    "path": "src/model/lean/name.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 104325244991008415732816326182316691568,
+    "low": 145869920632874167443029588466473107629
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450756,
+  "searchable": true
+}

@@ -1,0 +1,27 @@
+
+{
+  "data": "pub mod siws;\npub use siws::*;\n\npub mod sign_message;\npub use sign_message::*;\n\npub mod sign_tx;\npub use sign_tx::*;\n",
+  "images": [],
+  "char_len": 117,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "pub mod siws; pub use siws::*;  pub mod sign_message; pub use sign_message::*;  pub mod sign_tx; pub use sign_tx::*; ",
+  "source": {
+    "type": "File",
+    "path": "src/views/extras_views/mod.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 323108555769344954018423050886320266941,
+    "low": 209549514263489599245119225287873134709
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450763,
+  "searchable": true
+}

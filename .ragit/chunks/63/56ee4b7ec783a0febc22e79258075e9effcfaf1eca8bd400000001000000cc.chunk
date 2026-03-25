@@ -1,0 +1,27 @@
+
+{
+  "data": "use regex::Regex;\n\n/// Cleans HTML tags from a string.\npub fn clean_html(text: &str) -> String {\n    let html_tag_re = Regex::new(r\"<[^>]*>\").unwrap();\n    html_tag_re.replace_all(text, \"\").to_string()\n}\n",
+  "images": [],
+  "char_len": 204,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use regex::Regex;  /// Cleans HTML tags from a string. pub fn clean_html(text: &str) -> String {     let html_tag_re = Regex::new(r\"<[^>]*>\").unwrap();     html_tag_re.replace_all(text, \"\").to_string() } ",
+  "source": {
+    "type": "File",
+    "path": "src/extractor/model/clean_html.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 132044942307374833336353422755052914526,
+    "low": 211346271366188898485966997705891774668
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450759,
+  "searchable": true
+}

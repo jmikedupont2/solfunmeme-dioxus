@@ -1,0 +1,27 @@
+
+{
+  "data": "pub mod components;\npub mod model;\npub mod styles;\npub mod system;\npub mod types;\n",
+  "images": [],
+  "char_len": 82,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "pub mod components; pub mod model; pub mod styles; pub mod system; pub mod types; ",
+  "source": {
+    "type": "File",
+    "path": "src/extractor/mod.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 23194305385160962539730714556947046556,
+    "low": 326300739138062024144848968890284245074
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450761,
+  "searchable": true
+}

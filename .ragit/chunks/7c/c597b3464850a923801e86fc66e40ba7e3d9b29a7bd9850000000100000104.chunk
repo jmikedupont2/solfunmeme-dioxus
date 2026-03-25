@@ -1,0 +1,27 @@
+
+{
+  "data": "use sha2::{Digest, Sha256};\n\n/// Creates a content-addressable hash for a code snippet.  \npub fn create_content_hash(content: &str) -> String {\n    let mut hasher = Sha256::new();\n    hasher.update(content.as_bytes());\n    format!(\"{:x}\", hasher.finalize())\n}\n",
+  "images": [],
+  "char_len": 260,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "use sha2::{Digest, Sha256};  /// Creates a content-addressable hash for a code snippet.   pub fn create_content_hash(content: &str) -> String {     let mut hasher = Sha256::new();     hasher.update(content.as_bytes());     format!(\"{:x}\", hasher.finalize()) } ",
+  "source": {
+    "type": "File",
+    "path": "src/extractor/model/content_hash.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 165850230805903544994325892824230716427,
+    "low": 223164142116275693193389774430684578052
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450760,
+  "searchable": true
+}

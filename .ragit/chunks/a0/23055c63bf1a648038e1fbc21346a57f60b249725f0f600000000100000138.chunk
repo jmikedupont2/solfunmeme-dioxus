@@ -1,0 +1,27 @@
+
+{
+  "data": "pub mod appheader;\npub mod clearbutton;\npub mod extractor;\n\npub mod codesnippet;\npub mod dropzone;\npub mod filedisplay;\n\npub mod app;\npub mod fileinput;\npub mod fileresult;\npub mod filesnipper;\npub mod filesummary;\npub mod progress;\npub mod upload;\npub mod welcome;\n\npub mod example;\n//pub mod example_expanded;\n",
+  "images": [],
+  "char_len": 312,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "pub mod appheader; pub mod clearbutton; pub mod extractor;  pub mod codesnippet; pub mod dropzone; pub mod filedisplay;  pub mod app; pub mod fileinput; pub mod fileresult; pub mod filesnipper; pub mod filesummary; pub mod progress; pub mod upload; pub mod welcome;  pub mod example; //pub mod example_expanded; ",
+  "source": {
+    "type": "File",
+    "path": "src/extractor/components/mod.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 212858318447544273641580776423490274981,
+    "low": 169314032051065184528635932973958431032
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450760,
+  "searchable": true
+}

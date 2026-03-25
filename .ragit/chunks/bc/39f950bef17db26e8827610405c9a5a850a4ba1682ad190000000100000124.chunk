@@ -1,0 +1,27 @@
+
+{
+  "data": "pub mod app;\npub mod components;\npub mod forms;\npub mod validation;\n\n#[cfg(test)]\nmod tests;\n\n// these are used\n#[allow(unused_imports)]\npub use app::*;\n#[allow(unused_imports)]\npub use components::*;\n#[allow(unused_imports)]\npub use forms::*;\n#[allow(unused_imports)]\npub use validation::*;\n",
+  "images": [],
+  "char_len": 292,
+  "image_count": 0,
+  "title": "untitled",
+  "summary": "pub mod app; pub mod components; pub mod forms; pub mod validation;  #[cfg(test)] mod tests;  // these are used #[allow(unused_imports)] pub use app::*; #[allow(unused_imports)] pub use components::*; #[allow(unused_imports)] pub use forms::*; #[allow(unused_imports)] pub use validation::*; ",
+  "source": {
+    "type": "File",
+    "path": "src/views/crypto_frontend/mod.rs",
+    "index": 0,
+    "page": null
+  },
+  "uid": {
+    "high": 250195880845839076263702687725958580645,
+    "low": 223729028099128527388427977182133879076
+  },
+  "build_info": {
+    "file_reader_key": "plain_text_reader_v0",
+    "prompt_hash": "e25ce86ea777ac9217da9e56603e99b98a9cea1758655cea5af72ce0505e96a4",
+    "model": "dummy",
+    "ragit_version": "0.4.5"
+  },
+  "timestamp": 1774450762,
+  "searchable": true
+}
